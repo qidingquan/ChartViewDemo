@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RadarView">
+        <attr name="borderTextColor" format="color" />
+        <attr name="borderTextSize" format="dimension" />
+        <attr name="midTextColor" format="color" />
+        <attr name="midOneTextSize" format="dimension" />
+        <attr name="midTwoTextSize" format="dimension" />
+        <attr name="circleColor" format="color" />
+        <attr name="circleWidth" format="dimension" />
+        <attr name="overColor" format="color" />
+        <attr name="circleNum" format="integer" />
+        <attr name="textCircleSpace" format="dimension" />
+    </declare-styleable>
+</resources>
