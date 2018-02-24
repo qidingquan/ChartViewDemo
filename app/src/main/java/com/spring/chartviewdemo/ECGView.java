@@ -36,6 +36,7 @@ public class ECGView extends View {
 
     public ECGView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        this.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 
         backPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         backPaint.setStyle(Paint.Style.STROKE);

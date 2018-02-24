@@ -1,23 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context="com.spring.chartviewdemo.MainActivity">
     <com.spring.chartviewdemo.RadarView
         android:background="#cccccc"
         android:layout_width="200dp"
-        android:layout_height="200dp" />
+        android:layout_height="100dp"
+        android:visibility="gone"/>
     <com.spring.chartviewdemo.BearingView
         android:background="#cccccc"
         android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_height="100dp"
+        android:visibility="gone"/>
+    <com.spring.chartviewdemo.WaveView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:visibility="gone"/>
     <com.spring.chartviewdemo.ECGView
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
-    <com.spring.chartviewdemo.WaveView
+        android:layout_height="100dp"
+        android:visibility="gone"/>
+    <com.spring.chartviewdemo.BMIRulerView
         android:layout_width="match_parent"
-        android:layout_height="100dp"/>
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:keyValue="5"
+        app:lineColor="@color/color_dadada"
+        app:lineHeight="1.5dp"
+        app:lineMaxColor="@color/color_34464f"
+        app:lineMaxHeight="6dp"
+        app:lineMidColor="@color/color_34464f"
+        app:lineMidHeight="4dp"
+        app:lineMinColor="@color/color_dadada"
+        app:lineMinHeight="4dp"
+        app:lineSpaceWidth="22dp"
+        app:maxValue="100"
+        app:minValue="0"
+        app:perValue="0.1"
+        app:selectorValue="15.5"
+        app:textColor="@color/color_34464f"
+        app:textSize="15sp"
+        android:visibility="gone"/>
+    <com.spring.chartviewdemo.LineGraphicView
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"/>
+    <com.spring.chartviewdemo.StepChartView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
 </LinearLayout>
